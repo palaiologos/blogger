@@ -4,6 +4,8 @@
   <% @article.tags.each do |tag| %>
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
+  <br/>
+  <%= link_to "All Tags", tags_path %>
 </p>
 <p><%= @article.body %></p>
 <h3>Comments (<%= @article.comments.size %>)</h3>
